@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+    <link rel="stylesheet" href="download.css" type="text/css">
+</head>
+<body>
+    <div id="select_content">
+        <div id="rotulo"><h1>Select the file</h1></div>
+        <div id="box">
+            
+        </div>
+    </div>
+    <div id="show_content">
+        <div id="file_preview"></div>
+        <h2 id="show_selected_file">Selecciona un archivo para descargar</h2>
+        <form action="/dfile" method="post">
+            <input type="text" name = "file_name" id = "file_name" value = "">
+            <button id="submit_file" type="submit">Download file</button>
+        </form>
+        <div id="download_button"></div>
+    </div>
+
+    <script src="download.js"></script>
+</body>
+</html>

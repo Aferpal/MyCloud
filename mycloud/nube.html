@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCloud</title>
+    
+    <link rel="stylesheet" href="nube.css" type="text/css">
+
+    
+</head>
+<body>
+    <div id="upper">
+        <div id="logo"></div>
+        <div id="buttons">
+            <div id="up"><div id="imgup"></div><h1>Upload File</h1></div>
+            <div id="hidden-upload">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <label for="uploadFile" id="fileSelectButton">Select file</label>
+                    <input type="file" name="uploadFile" id="uploadFile" multiple="multiple">
+                    <button type="submit">Upload File</button>
+                </form>
+            </div>
+            <div id="down"><div id="imgdown"></div><h1>Download File</h1></div>
+        </div>
+    </div>
+    <script src="nube.js"></script>
+</body>
+</html>

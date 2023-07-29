@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(56, 53, 65);
+}
+#upper{
+
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+#logo{
+    margin: auto;
+    background-image: url(logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 70%;
+
+}
+#buttons{
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+#up{
+    display: inline-block;
+    background-color: rgb(255, 62, 62);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+}
+#imgup{
+    top: 9%;
+    left: 10%;
+    position: relative;
+    width: 65px;
+    height: 80%;
+    background-image: url(upload.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#up h1{
+    position: relative;
+    top: -52%;
+    left: 12%;
+}
+#up:hover{
+    cursor: pointer;
+    background-color: rgb(177, 60, 60);
+}
+
+#down{
+    display: inline-block;
+    background-color: rgb(66, 66, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    margin-left: 19%;
+}
+#imgdown{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 50px;
+    height: 80%;
+    background-image: url(download.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#down h1{
+    position: relative;
+    
+    top: -52%;
+    left: 12%;
+}
+#down:hover{
+    cursor: pointer;
+    background-color: rgb(66, 66, 180);
+}
+#hidden-upload{
+    display: none;
+    position: absolute;
+    width: 22.4%;
+    height: 100px;
+    background-color: rgb(177, 60, 60);
+    left: 22%;
+    border-radius: 10px;
+    
+}
+#hidden-upload form{
+    height: 100%;
+    width: 100%;
+}
+#hidden-upload form input{
+    display: none;
+}
+#hidden-upload form label{
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+#hidden-upload form button{
+    display: block;
+    width: 40%;
+    position: relative;
+    top: 25%;
+    left: 30%;
+}
+
+@media screen and (max-width:1400px){
+    #imgdown{
+        width: 35px;
+    }
+    #imgup{
+        width: 50px;
+    }
+}
+@media screen and (max-width:1200px){
+    #down h1{
+        font-size: 27px;
+        top: -47%;
+    }
+    #imgdown{
+        width: 25px;
+    }
+    #up h1{
+        font-size: 27px;
+        top: -47%;
+    }
+    #imgup{
+        width: 40px;
+    }
+}
+@media screen and (max-width:1125px) {
+    #logo{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1000px) {
+    #upper{
+        height: 800px;
+    }
+    #logo{
+        height: 50%;
+    }
+    #buttons{
+        height: 35%;
+    }
+    #up{
+        width: 100%;
+        height: 35%;
+
+    }    
+    #down{
+        width: 100%;
+        height: 35%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+    
+    #hidden-upload{
+        width: 56%;
+    }
+    
+
+}
+@media screen and (max-width:970px) {
+    #logo{
+        width: 100%;
+    }
+}
+@media screen and (max-width:800px) {
+    #logo{
+        height: 40%;
+    }
+    #buttons{
+        width: 90%;
+    }
+}
+@media screen and (max-width:630px) {
+    #logo{
+        height: 30%;
+    }
+}
+@media screen and (max-width:470px) {
+    #logo{
+        height: 20%;
+    }
+    #buttons{
+        height: 25%;
+    }
+}
