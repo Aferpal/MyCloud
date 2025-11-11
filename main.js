@@ -39,15 +39,20 @@ app.post('/upload', (req, res)=> {
         if(uploadedFiles.length>1){
             uploadedFiles.forEach(file=>{
                 const uploadPath = __dirname+ "/fileDb/" + file.name;
-                file.mv(uploadPath, (err)=>{if(err){console.log(err)}});
+                console.log("Saving file "+file.name);
+                file.mv(uploadPath, (err)=>{
+                    if(err){console.log(err)}else{rewrite_json();}
+                });
+                console.log(file.name+" saved correctly!");
             })
         }else{
             const uploadPath = __dirname+ "/fileDb/" + uploadedFiles.name;
-            uploadedFiles.mv(uploadPath, (err)=>{if(err){console.log(err)}});
-        }
-        
-        rewrite_json();
-        
+            console.log("Saving file "+uploadedFiles.name);
+            uploadedFiles.mv(uploadPath, (err)=>{
+                if(err){console.log(err)}else{rewrite_json();}
+            });
+            console.log(uploadedFiles.name+" saved correctly!");
+        }     
     }
     res.sendFile(__dirname+'/mycloud/nube.html');
     }

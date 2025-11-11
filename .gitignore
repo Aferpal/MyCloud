@@ -1,3 +1,4 @@
-fileDB/
+fileDb/
 node_modules/
 init_command.txt
+files.json
